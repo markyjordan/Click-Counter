@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         // increment button
         let incrementButton = UIButton()
-        incrementButton.frame = CGRect(x: 132, y: 386, width: 120, height: 60)
+        incrementButton.frame = CGRect(x: 132, y: 366, width: 120, height: 60)
         incrementButton.setTitle("Increment", for: .normal)
         incrementButton.setTitleColor(UIColor.blue, for: .normal)
         view.addSubview(incrementButton)
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         
         // decrement button
         let decrementButton = UIButton()
-        decrementButton.frame = CGRect(x: 132, y: 426, width: 120, height: 60)
+        decrementButton.frame = CGRect(x: 132, y: 446, width: 120, height: 60)
         decrementButton.setTitle("Decrement", for: .normal)
         decrementButton.setTitleColor(UIColor.red, for: .normal)
         view.addSubview(decrementButton)
