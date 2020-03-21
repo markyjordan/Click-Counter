@@ -23,18 +23,23 @@ class ViewController: UIViewController {
         view.addSubview(label)
         self.label = label
         
-        // click button
-        let button = UIButton()
-        button.frame = CGRect(x: 150, y: 250, width: 60, height: 60)
-        button.setTitle("Click", for: .normal)
-        button.setTitleColor(UIColor.blue, for: .normal)
-        view.addSubview(button)
+        // increment button
+        let incrementButton = UIButton()
+        incrementButton.frame = CGRect(x: 150, y: 250, width: 60, height: 60)
+        incrementButton.setTitle("Click", for: .normal)
+        incrementButton.setTitleColor(UIColor.blue, for: .normal)
+        view.addSubview(incrementButton)
+        
+        // increment button's target action
+        incrementButton.addTarget(self, action: #selector(ViewController.incrementCount), for: UIControl.Event.touchUpInside)
     }
     
-    func incrementCount() {
+    @objc func incrementCount() {
         self.count += 1
         self.label.text = "\(self.count)"
     }
+    
+    
 
 }
 
