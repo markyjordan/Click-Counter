@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         // increment button
         let incrementButton = UIButton()
         incrementButton.frame = CGRect(x: 150, y: 250, width: 60, height: 60)
-        incrementButton.setTitle("Click", for: .normal)
+        incrementButton.setTitle("Increment", for: .normal)
         incrementButton.setTitleColor(UIColor.blue, for: .normal)
         view.addSubview(incrementButton)
         
