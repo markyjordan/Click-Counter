@@ -25,13 +25,21 @@ class ViewController: UIViewController {
         
         // increment button
         let incrementButton = UIButton()
-        incrementButton.frame = CGRect(x: 150, y: 250, width: 60, height: 60)
+        incrementButton.frame = CGRect(x: 150, y: 250, width: 120, height: 60)
         incrementButton.setTitle("Increment", for: .normal)
         incrementButton.setTitleColor(UIColor.blue, for: .normal)
         view.addSubview(incrementButton)
         
         // increment button's target action
         incrementButton.addTarget(self, action: #selector(ViewController.incrementCount), for: UIControl.Event.touchUpInside)
+        
+        // decrement button
+        let decrementButton = UIButton()
+        decrementButton.frame = CGRect(x: 150, y: 300, width: 120, height: 60)
+        decrementButton.setTitle("Decrement", for: .normal)
+        incrementButton.setTitleColor(UIColor.red, for: .normal)
+        view.addSubview(decrementButton)
+        
     }
     
     @objc func incrementCount() {
