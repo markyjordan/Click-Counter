@@ -56,11 +56,13 @@ class ViewController: UIViewController {
     @objc func incrementCount() {
         self.count += 1
         self.label.text = "\(self.count)"
+        view.backgroundColor = getRandomColor()
     }
     
     @objc func decrementCount() {
         self.count -= 1
         self.label.text = "\(self.count)"
+        view.backgroundColor = getRandomColor()
     }
 
 }
