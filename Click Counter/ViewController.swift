@@ -44,6 +44,14 @@ class ViewController: UIViewController {
         decrementButton.addTarget(self, action: #selector(ViewController.decrementCount), for: UIControl.Event.touchUpInside)
         
     }
+    // generate random color
+    func getRandomColor() -> UIColor {
+         let red = CGFloat(drand48())
+         let green = CGFloat(drand48())
+         let blue = CGFloat(drand48())
+
+         return UIColor(red:red, green: green, blue: blue, alpha: 1.0)
+    }
     
     @objc func incrementCount() {
         self.count += 1
